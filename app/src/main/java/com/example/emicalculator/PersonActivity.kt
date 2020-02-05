@@ -27,8 +27,6 @@ class PersonActivity : AppCompatActivity() {
                 val mAge = age.text.toString()
                 val mJob = job.text.toString()
                 val person = Person(mName, mAge, mJob)
-                val person = Person(mName, mAge, mJob)
-
 
                 passedIntent.putExtra("PERSON", person)
 
