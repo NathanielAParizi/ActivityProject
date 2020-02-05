@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".PersonActivity">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="184dp"
+        android:text="Button"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/job"
+        app:layout_constraintVertical_bias="0.47" />
+
     <EditText
         android:id="@+id/name"
         android:layout_width="wrap_content"
@@ -49,4 +61,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteX="100dp"
         tools:layout_editor_absoluteY="300dp" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
