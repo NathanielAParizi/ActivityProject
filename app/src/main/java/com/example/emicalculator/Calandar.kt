@@ -10,6 +10,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class Calandar : AppCompatActivity() {
 
+    var toastMessage = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,16 +18,19 @@ class Calandar : AppCompatActivity() {
 
 
         val calendarView = findViewById<CalendarView>(R.id.calendarView)
+        calendarView?.setOnDateChangeListener { view, year, month, dayOfMonth ->
+            toastMessage =
+                "Scheduled a date:" + "DAY: " + dayOfMonth + "  Month: " + (1 + month) + "   Year: " + year
+
+
+        }
 
 
     }
 
     fun onClick(view: View) {
-        calendarView?.setOnDateChangeListener { view, year, month, dayOfMonth ->
-            val toastMessage =
-                "Scheduled a date:" + "DAY: " + dayOfMonth + "  Month: " + (1 + month) + "   Year: " + year
-            Toast.makeText(this, toastMessage, Toast.LENGTH_SHORT).show()
-        }
+        Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show()
+
     }
 
 

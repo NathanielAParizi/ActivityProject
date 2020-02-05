@@ -16,9 +16,7 @@ class PersonResultActivity : AppCompatActivity() {
 
 
         var personList = intent.getParcelableArrayListExtra<Person>("People")
-        Log.v("GOLD",personList.toString())
         txt.text = personList.toString()
-
 
 
     }
