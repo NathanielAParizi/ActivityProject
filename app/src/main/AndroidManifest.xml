@@ -13,8 +13,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Rating"></activity>
         <activity android:name=".Calandar" />
-        <activity android:name=".MediaPlayerActivity" />
-        <activity android:name=".WebViewActivity" />
         <activity android:name=".PersonResultActivity" />
         <activity android:name=".PersonActivity" />
         <activity android:name=".EMIActivity" />
