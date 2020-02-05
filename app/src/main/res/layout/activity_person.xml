@@ -7,7 +7,7 @@
     tools:context=".PersonActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="184dp"
@@ -15,11 +15,11 @@
         android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/job"
+        app:layout_constraintTop_toBottomOf="@+id/etJob"
         app:layout_constraintVertical_bias="0.47" />
 
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/etName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="100dp"
@@ -27,13 +27,13 @@
         android:gravity="center"
         android:inputType="textPersonName"
         android:text="Name"
-        app:layout_constraintBottom_toTopOf="@id/age"
+        app:layout_constraintBottom_toTopOf="@id/etAge"
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteX="100dp"
         tools:layout_editor_absoluteY="100dp" />
 
     <EditText
-        android:id="@+id/age"
+        android:id="@+id/etAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="100dp"
@@ -42,13 +42,13 @@
         android:gravity="center"
         android:inputType="textPersonName"
         android:text="Age"
-        app:layout_constraintBottom_toTopOf="@id/job"
+        app:layout_constraintBottom_toTopOf="@id/etJob"
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteX="100dp"
         tools:layout_editor_absoluteY="200dp" />
 
     <EditText
-        android:id="@+id/job"
+        android:id="@+id/etJob"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="100dp"
@@ -57,7 +57,7 @@
         android:gravity="center"
         android:inputType="textPersonName"
         android:text="Job"
-        app:layout_constraintTop_toBottomOf="@id/age"
+        app:layout_constraintTop_toBottomOf="@id/etAge"
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteX="100dp"
         tools:layout_editor_absoluteY="300dp" />
