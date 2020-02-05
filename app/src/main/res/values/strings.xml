@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">EMI Calculator</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="calculate">calculate</string>
+    <string name="emi">EMI</string>
+</resources>

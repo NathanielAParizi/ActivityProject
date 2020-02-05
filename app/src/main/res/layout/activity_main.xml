@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/takepicture"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:onClick="onClick"
+        android:text="@string/take_picture" />
+
+    <Button
+        android:id="@+id/mediaplayer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:onClick="onClick"
+        android:text="Media Player" />
+
+    <Button
+        android:id="@+id/emicalculator"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:onClick="onClick"
+        android:text="EMI Calculator" />
+
+    <Button
+        android:id="@+id/person"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:onClick="onClick"
+        android:text="Person" />
+
+    <Button
+        android:id="@+id/personresults"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:onClick="onClick"
+        android:text="Person Results" />
+
+    <Button
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:onClick="onClick"
+        android:text="WebView" />
+
+</LinearLayout>
